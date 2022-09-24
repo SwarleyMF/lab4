@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img onmouseover="largePic(this)" onmouseout="normalPic(this)" src="messi.jpg" width="500px" height="500px">
+    <script>
+        //onclick->single click event
+        //ondblclick->double click event
+        function largePic(x){
+            x.style.width="700px";
+            x.style.height="700px"; 
+        }
+        function normalPic(x){
+            x.style.width="300px";
+            x.style.height="400px"; 
+        }
+    </script>
+</body>
+</html>

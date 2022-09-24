@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="lab4.css">
+    </head>
+    <body>
+        <div class="first-div">
+            <h1 onclick="showName()">My name</h1>
+            <h1 onclick="showRegId()">My reg-id</h1>
+        </div>
+        <div class="second-div">
+            <h1>Person</h1>
+            <img onmouseover="increaseSize(this)" onmouseout="decreaseSize(this)" src="https://media-exp1.licdn.com/dms/image/C5603AQGGyYNK1G4SYw/profile-displayphoto-shrink_200_200/0/1643529904732?e=2147483647&v=beta&t=X3gMelIz5LCS7jZ9nfj66HYRwnnoTeG6dExMZy8JPhw" alt="image"/>
+            <h1 onmouseover="showUserName()" onmouseout="hideUserName()" id="usernameId">user name</h1>
+        </div>
+        <div class="third-div">
+            <h1>piyush@smit.smu.edu.in</h1>
+        </div>
+    </body>
+    <script>
+        function showName(){
+            alert("Hi, my name is Piyush")
+        }
+        function showRegId(){
+            alert("Hi, my name is Piyush")
+        }
+        function increaseSize(x){
+            x.style.width="600px"
+            x.style.height="400px"
+        }
+        function decreaseSize(x){
+            x.style.width="200px"
+            x.style.height="200px"
+        }
+        function showUserName(){
+            const x=document.getElementById("usernameId")
+            x.innerHTML="Sourav Dutta"
+        }
+        function hideUserName(){
+            const x=document.getElementById("usernameId")
+            x.innerHTML="user name"
+        }
+    </script>
+</html>

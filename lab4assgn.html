@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB4 assignment</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        #div1{
+            text-align: center;
+            background-color: gray;
+            margin:10px; 
+        }
+        #div2{
+            text-align: center;
+            background-color: aqua;
+        }
+        #div3{
+            text-align: center;
+            background-color: rgb(87, 56, 116);
+            width: 300px;
+            border: 15px solid rgb(43, 53, 43);
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #username{
+        font-size: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <button onclick="showAlert()">Press to see name and reg no.</button>
+    </div>
+    <div id="div2">
+        <img onmouseover="largePic(this)" onmouseout="normalPic(this)" src="messi.jpg" width="500px" height="500px" title="Lionel Messi">
+        <h2 id="pName" onmouseover="showName()" onmouseout="hideName()">Lionel Messi</h2>
+    </div>
+    <div id="div3">
+        <p>&#169 <a href="shirshakshrestha/">shirshak_shrestha@smit.smu.edu.in</a></p>
+    </div>
+
+    <script>
+        function showAlert(){
+            alert("Name: Shirshak Bhakta Shrestha\nReg No: 202000540");
+        }
+        function largePic(x){
+            x.style.width="700px";
+            x.style.height="700px"; 
+        }
+        function normalPic(x){
+            x.style.width="300px";
+            x.style.height="300px"; 
+        }
+        function showName(){
+            const x=document.getElementById("pName")
+            x.innerHTML='<h1 class="username" >Lionel Messi</h1>'
+        }
+        function hideName(){
+            const x=document.getElementById("pName")
+            x.innerHTML="Player name"
+        }
+    </script>
+</body>
+</html>
